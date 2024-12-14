@@ -3,15 +3,12 @@ import { GetTheApp, Footer } from "../login_components/LoginPage";
 import { useNavigate } from 'react-router-dom';
 import "./signUp.css"
 
-
 function SignUp() {
-
     const navigate = useNavigate();
 
     const handleLogIn = () => {
         navigate('/log-in');
     }
-
 
     function blockShow() {
         const inputField = document.getElementById("myInput2");
@@ -34,8 +31,6 @@ function SignUp() {
             document.querySelector(".showHideBtn2").innerHTML = "Show";
         }
     };
-
-
 
     return (
         <div >
