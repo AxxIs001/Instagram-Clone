@@ -2,7 +2,6 @@ import React from "react";
 import './mainPage.css'
 
 
-
 function StorySection() {
     return (
         <div className="story-section">
@@ -67,14 +66,9 @@ function StorySection() {
                 </div>
                 <span className="story-username">ntrhi2706</span>
             </div>
-
-            {/* Add more stories here */}
-
+            
         </div>
-
-
     )
-
 }
 
 export default StorySection;

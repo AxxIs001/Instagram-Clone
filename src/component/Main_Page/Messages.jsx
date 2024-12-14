@@ -3,8 +3,6 @@ import '/src/component/Main_Page/css-files/messages.css'
 
 
 function Messages() {
-
-
     function openModalBtn() {
         document.querySelector(".modal-overlay").style.display = "flex";
     }
@@ -112,9 +110,6 @@ function Messages() {
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
     )

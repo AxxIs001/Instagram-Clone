@@ -2,9 +2,6 @@ import React from "react";
 import '/src/component/Main_Page/css-files/newPost.css';
 
 function NewPost() {
-
-
-
     function closeCreateNewPost() {
         document.querySelector(".NewPost-overlay").style.display = "none";
     }

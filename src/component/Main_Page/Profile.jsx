@@ -51,11 +51,7 @@ function Profile() {
                 </main>
             </div>
         </div>
-
-
     )
-
-
 }
 
 export default Profile;

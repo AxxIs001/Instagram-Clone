@@ -24,7 +24,6 @@ function AllMainPage() {
                 </div>
             </div>
         </div>
-
     )
 }
 

@@ -1,7 +1,6 @@
 import React from "react";
 import './mainPage.css'
 
-
 function Feed() {
     return (
         <div class="feed">
@@ -115,8 +114,6 @@ function Feed() {
                 </div>
             </div>
         </div>
-
-
     )
 
 }

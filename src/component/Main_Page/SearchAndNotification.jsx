@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
-
 function SeacrhAndNotification() {
     const [activeButton, setActiveButton] = useState('home');
 
@@ -12,8 +10,6 @@ function SeacrhAndNotification() {
             if (activeButton !== 'messages') {
                 setSidebarOpen(!isSidebarOpen);
             }
-
-
 
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
@@ -42,8 +38,6 @@ function SeacrhAndNotification() {
                 document.getElementById("mySidepanel").style.width = "395px";
             }
 
-
-
         } else if (buttonName === 'messages') {
             if (isSidebarOpen) {
                 setSidebarOpen(false);
@@ -57,8 +51,6 @@ function SeacrhAndNotification() {
             document.querySelector(".logo").style = "height: 30px; margin-bottom: 45px;";
             document.querySelector(".instImg-main").style = "width: 22px; height: 22px; margin-left: 5px;";
         }
-
-
 
         /*Notification */
         else if (buttonName === 'notifications') {
@@ -133,10 +125,6 @@ function SeacrhAndNotification() {
                 </div>
 
 
-
-
-
-
                 <div className="notification-suggestion">
                     <h3>Suggested for you</h3>
                     <div class="suggestions-section">
@@ -186,8 +174,6 @@ function SeacrhAndNotification() {
                                 </div>
                                 <a href="#" class="notification-follow-btn">Follow</a>
                             </li>
-
-
 
 
                             <li class="suggestion">

@@ -3,8 +3,6 @@ import '/src/component/Main_Page/css-files/reels.css'
 
 
 function Reels() {
-
-
     useEffect(() => {
         const handleScroll = (event) => {
             event.preventDefault();
@@ -24,7 +22,6 @@ function Reels() {
             window.removeEventListener("wheel", handleScroll);
         };
     }, []);
-
 
     return (
         <>
@@ -69,14 +66,11 @@ function Reels() {
                 </div>
             </div>
 
-
-
             <div class="reel-interface">
                 <div class="video-container">
                     <video autoplay loop controls>
                         <source src="/src/component/Main_Page/inst icons/dota-2-windranger-arcana-desktop-wallpaperwaifu-com.mp4" type="video/mp4" />
                     </video>
-
 
                 </div>
                 <div class="actions">
@@ -113,8 +107,6 @@ function Reels() {
                     </div>
                 </div>
             </div>
-
-
 
             {/*Not necessary, will be deleted, just for check */}
 

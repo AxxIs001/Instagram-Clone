@@ -14,16 +14,13 @@ function LeftSideBar() {
     const [isSidebarOpen, setSidebarOpen] = useState(true);
     const [activeButton, setActiveButton] = useState('home');
 
-
     /*Reload  */
     const handleInstLogo = () => {
         window.location.reload()
 
     }
-
     useEffect(() => {
         if (location.pathname === '/messages') {
-
 
             //Change the Logo Size 
             document.querySelector(".instImg-main").src = "/src/component/Main_Page/inst icons/inst-icon.png";
@@ -31,9 +28,6 @@ function LeftSideBar() {
             document.querySelector(".instImg-main").style = "width: 22px; height: 22px; margin-left: 5px;";
         }
     }, [location.pathname]);
-
-
-
 
     // Change size of Instagram Icon
     const instImgMain = document.querySelector(".instImg-main");
@@ -55,16 +49,12 @@ function LeftSideBar() {
         }
     }
 
-
-
-
     const handleButtonClick = (buttonName) => {
 
         if (buttonName === 'search') {
             if (activeButton !== 'messages') {
                 setSidebarOpen(!isSidebarOpen);
             }
-
 
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
@@ -83,8 +73,6 @@ function LeftSideBar() {
                 document.getElementById("mySidepanel").style.width = "395px";
             }
 
-
-
         } else if (buttonName === 'messages') {
             if (isSidebarOpen) {
                 setSidebarOpen(false);
@@ -94,15 +82,12 @@ function LeftSideBar() {
             document.getElementById("myNotification").style.width = "0";
         }
 
-
-
         /*Notification */
         else if (buttonName === 'notifications') {
 
             if (activeButton !== 'messages') {
                 setSidebarOpen(!isSidebarOpen);
             }
-
 
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
@@ -133,24 +118,18 @@ function LeftSideBar() {
 
     };
 
-
-
     //Show Create New Post
     function openCreateNewPost() {
         document.querySelector(".NewPost-overlay").style.display = "flex";
 
     }
 
-
     //Log Out
-
     const navigate = useNavigate();
 
     const handleLogOut = () => {
         navigate('/logOut');
     };
-
-
 
     return (
         <div className="sidebar-container">
@@ -281,8 +260,6 @@ function LeftSideBar() {
                 </nav>
             </aside>
 
-
-
             {/*Search Side Panel*/}
             <div id="mySidepanel" className="sidepanel">
                 <div className="sidepanel-top">
@@ -306,11 +283,6 @@ function LeftSideBar() {
                     <a>Activity On Your Posts</a>
                     <a className="notification-text"><span>When someone likes or comments on one of</span> your posts, you'll see it here.</a>
                 </div>
-
-
-
-
-
 
                 <div className="notification-suggestion">
                     <h3>Suggested for you</h3>
@@ -362,9 +334,6 @@ function LeftSideBar() {
                                 <a href="#" class="notification-follow-btn">Follow</a>
                             </li>
 
-
-
-
                             <li class="suggestion">
                                 <img src="https://via.placeholder.com/40" alt="Suggestion Avatar" />
                                 <div class="suggestion-info">
@@ -414,9 +383,7 @@ function LeftSideBar() {
                     </div>
                 </div>
             </div>
-
-
-            {/*Create New Post  */}
+            {/*Create New Post. */}
             <NewPost />
 
             {/*Dropup */}
@@ -433,7 +400,6 @@ function LeftSideBar() {
                     <a className="logOut" onClick={handleLogOut}>Log out</a>
                 </div>
             </div>
-
         </div>
     );
 }

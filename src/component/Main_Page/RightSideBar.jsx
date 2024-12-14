@@ -3,7 +3,6 @@ import './mainPage.css'
 
 function RightSideBar() {
     return (
-
         <div class="right-sidebar">
             <div class="profile-section">
                 <img src="/src/component/Main_Page/inst icons/avatar.png" alt="Profile Avatar" class="profile-avatar" />
