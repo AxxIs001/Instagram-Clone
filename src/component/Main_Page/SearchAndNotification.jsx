@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 function SeacrhAndNotification() {
     const [activeButton, setActiveButton] = useState('home');
 
-
     const handleButtonClick = (buttonName) => {
 
         if (buttonName === 'search') {
@@ -14,7 +13,6 @@ function SeacrhAndNotification() {
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
                 document.getElementById("mySidepanel").style.width = "395px";
-
 
                 //Change the Logo Size 
                 document.querySelector(".instImg-main").src = "/src/component/Main_Page/inst icons/inst-icon.png";
@@ -113,7 +111,6 @@ function SeacrhAndNotification() {
                 <p>No recent searches.</p>
             </div>
 
-
             <div id="myNotification" className="notification">
                 <div className="notification-header">
 
@@ -123,7 +120,6 @@ function SeacrhAndNotification() {
                     <a>Activity On Your Posts</a>
                     <a className="notification-text"><span>When someone likes or comments on one of</span> your posts, you'll see it here.</a>
                 </div>
-
 
                 <div className="notification-suggestion">
                     <h3>Suggested for you</h3>
@@ -174,7 +170,6 @@ function SeacrhAndNotification() {
                                 </div>
                                 <a href="#" class="notification-follow-btn">Follow</a>
                             </li>
-
 
                             <li class="suggestion">
                                 <img src="https://via.placeholder.com/40" alt="Suggestion Avatar" />

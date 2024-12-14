@@ -81,7 +81,6 @@ function RightSideBar() {
                 <span>© 2024 INSTAGRAM FROM META</span>
             </div>
         </div>
-
     )
 }
 
